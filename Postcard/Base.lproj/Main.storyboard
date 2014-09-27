@@ -103,6 +103,23 @@
                                     <rect key="frame" x="16" y="83" width="284" height="57"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdT-Dt-MyX">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="154" width="196" height="36"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="poQ-HM-7rN">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="318" width="284" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +129,8 @@
                                 <exclude reference="cdT-vE-ahp"/>
                                 <exclude reference="8kf-9o-0Ef"/>
                                 <exclude reference="dXF-yw-aNY"/>
+                                <exclude reference="hdT-Dt-MyX"/>
+                                <exclude reference="poQ-HM-7rN"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,13 +140,17 @@
                                 <include reference="cdT-vE-ahp"/>
                                 <include reference="8kf-9o-0Ef"/>
                                 <include reference="dXF-yw-aNY"/>
+                                <include reference="hdT-Dt-MyX"/>
+                                <include reference="poQ-HM-7rN"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="enterDescriptionTextField" destination="poQ-HM-7rN" id="0bb-9U-7cV"/>
                         <outlet property="entermessagetextfield" destination="cdT-vE-ahp" id="7Vo-Nq-2cN"/>
                         <outlet property="enternametextfield" destination="0hh-E1-RBk" id="Dt9-c9-aBn"/>
                         <outlet property="mailButton" destination="8kf-9o-0Ef" id="OoL-CZ-m4O"/>
+                        <outlet property="messageLabel2" destination="hdT-Dt-MyX" id="APd-mX-CoC"/>
                         <outlet property="messagelabel" destination="dXF-yw-aNY" id="bza-o7-TYL"/>
                     </connections>
                 </viewController>
